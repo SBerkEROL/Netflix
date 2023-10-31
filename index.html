@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!------------------- Netflix Font ------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">NET<span>FLIX</span></h1>
+      <dl>
+        <dt>Thank you for signing up at Netflix.Tell us more about yourself</dt>
+      </dl>
+      <form id="survey-form">
+        <section class="top">
+          <label class="label-top" for="name">Name</label>
+          <!-- required doldurulması zorunlu kısım -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </section>
+        <!------------------- Age ------------------->
+        <section class="top">
+          <label class="label-top" for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            min="18"
+            max="100"
+            placeholder="Age"
+            required
+          />
+        </section>
+        <!------------------- E-mail ------------------->
+        <section class="top">
+          <label class="label-top" for="email">E-mail</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </section>
+        <!------------------- Content Type ------------------->
+        <section class="top">
+          <label for="content" class="label-top">Content Type</label>
+          <select name="content" id="content">
+            <option value="series">Series</option>
+            <option value="movies">Movies</option>
+          </select>
+        </section>
+        <!------------------- Movie Type ------------------->
+        <section class="movie-type">
+          <label for="checkbox" class="label-movie">Movie Type</label>
+          <input
+            type="checkbox"
+            name="movie-type"
+            value="comedy"
+            id="movie"
+            checked
+          />Comedy
+          <br />
+          <input
+            type="checkbox"
+            name="movie-type"
+            value="action"
+            id="movie"
+          />Action
+          <br />
+          <input
+            type="checkbox"
+            name="movie-type"
+            value="comedy"
+            id="movie"
+            checked
+          />Romance
+        </section>
+        <!------------------- Gender ------------------->
+        <section class="gender">
+          <!-- en üstteki for'u boş bıraktım çünkü 'Gender'a tıklandığı zaman Female ya da Male'e gitmesini istemiyorum -->
+          <label for="gender" class="label-gender">Gender</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <br />
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <br />
+          <input type="radio" name="gender" id="other" />
+          <label for="Other">Other</label>
+        </section>
+        <!------------------- Feedback ------------------->
+        <section>
+          <!-- cols = genişlik -->
+          <!-- rows = uzunluk -->
+          <!-- style="resize:none" yorum girilen yerin sag alt köşeden tutulup küçültülüp büyültülmesini engeller -->
+          <label for="feedback" class="label-feedback">Feedback</label>
+          <br />
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="50"
+            rows="5"
+            style="resize: none"
+            maxlength="100"
+            placeholder="Any comment"
+          >
+          </textarea>
+        </section>
+        <section class="button">
+          <!------------------- Button ------------------->
+          <input type="submit" class="submit" />
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

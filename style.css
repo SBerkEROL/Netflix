@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./img/bg_image.jpg);
+  height: 100vh;
+  /* tekrar etme */
+  background-repeat: no-repeat;
+  /* ortala */
+  background-position: center;
+  /* arkaplandaki fotoğraf icerik boyunca arkaplani kaplar */
+  background-attachment: fixed;
+  /* arkaplandaki fotoğraf icerik boyunca arkaplani kaplar kaymaz */
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.318);
+  margin: 2% auto;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+#title {
+  font-size: 60px;
+  margin-top: 20px;
+  /* google > netflix font google > link'i index head'e yapistir */
+  font-family: "Bebas Neue", sans-serif;
+}
+span {
+  color: red;
+}
+#survey-form {
+  background-color: rgba(0, 0, 0, 0.753);
+  /* container'in yanlamasina %'ini kapla */
+  width: 20%;
+  /* container'in dikey %'ini kapla */
+  height: 45em;
+  /* container'a gore icerigi ortala */
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* ic hacim */
+  padding: 15px;
+  /* sola yasla */
+  text-align: justify;
+}
+section {
+  margin: 10px;
+  display: block;
+}
+
+/*********************** NAME - AGE - EMAIL - CONTENT TYPE ***********************/
+section.top {
+  margin-bottom: 20px;
+}
+
+/* name-age-e-mail-content type basliklari */
+.label-top {
+  /* label1'lari block yaptim ki yukari ciksin ve tek basina alan kaplasin */
+  display: block;
+  /* asagidaki element'den 5px uzaklasti */
+  padding-bottom: 10px;
+}
+
+#name {
+  width: 100%;
+  padding: 10px;
+}
+#age {
+  width: 100%;
+  padding: 10px;
+}
+#email {
+  width: 100%;
+  padding: 10px;
+}
+#content {
+  width: 100%;
+  padding: 10px;
+}
+
+/*********************** Movie Type ***********************/
+section.movie-type {
+  /* yukaridan ve asagidan uzaklastirdim */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.label-movie {
+  /* block element yaptim ki yazi */
+  display: block;
+}
+
+/*********************** Gender ***********************/
+section.gender {
+  margin-bottom: 10px;
+}
+.label-gender {
+  display: block;
+}
+
+/*********************** Feedback ***********************/
+textarea {
+  width: 100%;
+}
+
+/*********************** Submit ***********************/
+section.button {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.submit {
+  color: white;
+  background-color: red;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 8px;
+  width: 30%;
+}
